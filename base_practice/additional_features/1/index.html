@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Async Defer</title>
+  <script async src="scripts.js"></script>
+</head>
+<body>
+  
+  <!-- async - браузер доходит до скрипта и не ждет, пока загрузится скрипт,
+  загрузка в фоновом режиме и продолжит считывание файла дальше. -->
+
+  <script defer src="scripts.js"></script>
+
+  <!-- defer - Делает тоже самое, что и async, только 
+    если дальше идет скрипт с атрибутом defer,
+    то браузер не смотря на то, что будет загружать 
+    ассинхронно в фоновом режиме, порядок загруки и 
+    выполнения данных скриптов сохранится. 
+    Загружает первый с defer, а только после загружает следующий-->
+
+  </body>
+</html>
